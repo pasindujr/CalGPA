@@ -12,7 +12,7 @@ public class Student {
     int markssad;
     int marksethics;
     int marksdcn;
-    int test;
+    /* testing */
 
     public void getGrade() {
 
