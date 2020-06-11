@@ -3,8 +3,8 @@ package com.company;
 public class Student {
     String name;
     double gpa;
-    String subject;
-    int marksoop;
+    String subject = "oop";
+    int marksoop = 56;
     int marksdata;
     int marksstat;
     int markseng;
@@ -12,9 +12,10 @@ public class Student {
     int markssad;
     int marksethics;
     int marksdcn;
+    double gp;
 
-    public int getGrade(String subject) {
-        double gp;
+    public double getGrade(String subject, double gp) {
+        this.gp = gp;
         this.subject = subject;
         switch (subject) {
             case "oop":
@@ -43,8 +44,7 @@ public class Student {
                 }
 
         }
-        return -1;
-
+        return gp;
     }
 }
 
