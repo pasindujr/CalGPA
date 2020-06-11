@@ -13,11 +13,11 @@ public class Student {
     int marksethics;
     int marksdcn;
 
-    public void getGrade() {
+    public int getGrade(String subject) {
+        switch (subject) {
 
-
-
-
+        }
+        return -1;
     }
 }
 
