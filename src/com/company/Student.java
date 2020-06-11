@@ -3,76 +3,264 @@ package com.company;
 public class Student {
     String name;
     double gpa;
-    String subject = "oop";
-    int marksoop = 56;
-    int marksdata = 46;
-    int marksstat;
+    String subject;
+    int marksoop;
+    int marksdata;
+    int marksstats;
     int markseng;
     int marksflash;
     int markssad;
     int marksethics;
     int marksdcn;
+    String grade;
     double gp;
 
-    public double getGrade(String subject, double gp) {
-        this.gp = gp;
+    public String getGrade(String subject, String grade) {
+        this.grade = grade;
         this.subject = subject;
-       if (subject.equals("oop")) {
-           if (marksoop >= 70) {
-               gp = 4;
-           } else if (marksoop >= 65) {
-               gp = 3.7;
-           } else if (marksoop >= 60) {
-               gp = 3.3;
-           } else if (marksoop >= 55) {
-               gp = 3;
-           } else if (marksoop >= 50) {
-               gp = 2.7;
-           } else if (marksoop >= 45) {
-               gp = 2.3;
-           } else if (marksoop >= 40) {
-               gp = 2;
-           } else if (marksoop >= 35) {
-               gp = 1.7;
-           } else if (marksoop >= 30) {
-               gp = 1.3;
-           } else if (marksoop <= 25) {
-               gp = 1;
-           } else {
-               gp = 0;
-           }
-       }
+        if (subject.equals("oop")) {
+            if (marksoop >= 70) {
+                grade = "aplus";
+            } else if (marksoop >= 65) {
+                grade = "aminus";
+            } else if (marksoop >= 60) {
+                grade = "bplus";
+            } else if (marksoop >= 55) {
+                grade = "b";
+            } else if (marksoop >= 50) {
+                grade = "bminus";
+            } else if (marksoop >= 45) {
+                grade = "cplus";
+            } else if (marksoop >= 40) {
+                grade = "c";
+            } else if (marksoop >= 35) {
+                grade = "cminus";
+            } else if (marksoop >= 30) {
+                grade = "dplus";
+            } else if (marksoop <= 25) {
+                grade = "d";
+            } else {
+                grade = "e";
+            }
+        }
 
-           if (subject.equals("data")) {
-               if (marksdata >= 70) {
-                   gp = 4;
-               } else if (marksdata >= 65) {
-                   gp = 3.7;
-               } else if (marksdata >= 60) {
-                   gp = 3.3;
-               } else if (marksdata >= 55) {
-                   gp = 3;
-               } else if (marksdata >= 50) {
-                   gp = 2.7;
-               } else if (marksdata >= 45) {
-                   gp = 2.3;
-               } else if (marksdata >= 40) {
-                   gp = 2;
-               } else if (marksdata >= 35) {
-                   gp = 1.7;
-               } else if (marksdata >= 30) {
-                   gp = 1.3;
-               } else if (marksdata <= 25) {
-                   gp = 1;
-               } else {
-                   gp = 0;
-               }
-           }
-          return gp;
+        if (subject.equals("data")) {
+            if (marksdata >= 70) {
+                grade = "aplus";
+            } else if (marksoop >= 65) {
+                grade = "aminus";
+            } else if (marksoop >= 60) {
+                grade = "bplus";
+            } else if (marksoop >= 55) {
+                grade = "b";
+            } else if (marksoop >= 50) {
+                grade = "bminus";
+            } else if (marksoop >= 45) {
+                grade = "cplus";
+            } else if (marksoop >= 40) {
+                grade = "c";
+            } else if (marksoop >= 35) {
+                grade = "cminus";
+            } else if (marksoop >= 30) {
+                grade = "dplus";
+            } else if (marksoop <= 25) {
+                grade = "d";
+            } else {
+                grade = "e";
+            }
+        }
 
+        if (subject.equals("stats")) {
+            if (marksstats >= 70) {
+                grade = "aplus";
+            } else if (marksoop >= 65) {
+                grade = "aminus";
+            } else if (marksoop >= 60) {
+                grade = "bplus";
+            } else if (marksoop >= 55) {
+                grade = "b";
+            } else if (marksoop >= 50) {
+                grade = "bminus";
+            } else if (marksoop >= 45) {
+                grade = "cplus";
+            } else if (marksoop >= 40) {
+                grade = "c";
+            } else if (marksoop >= 35) {
+                grade = "cminus";
+            } else if (marksoop >= 30) {
+                grade = "dplus";
+            } else if (marksoop <= 25) {
+                grade = "d";
+            } else {
+                grade = "e";
+            }
+        }
+
+        if (subject.equals("eng")) {
+            if (markseng >= 70) {
+                grade = "aplus";
+            } else if (marksoop >= 65) {
+                grade = "aminus";
+            } else if (marksoop >= 60) {
+                grade = "bplus";
+            } else if (marksoop >= 55) {
+                grade = "b";
+            } else if (marksoop >= 50) {
+                grade = "bminus";
+            } else if (marksoop >= 45) {
+                grade = "cplus";
+            } else if (marksoop >= 40) {
+                grade = "c";
+            } else if (marksoop >= 35) {
+                grade = "cminus";
+            } else if (marksoop >= 30) {
+                grade = "dplus";
+            } else if (marksoop <= 25) {
+                grade = "d";
+            } else {
+                grade = "e";
+            }
+        }
+
+        if (subject.equals("flash")) {
+            if (marksflash >= 70) {
+                grade = "aplus";
+            } else if (marksoop >= 65) {
+                grade = "aminus";
+            } else if (marksoop >= 60) {
+                grade = "bplus";
+            } else if (marksoop >= 55) {
+                grade = "b";
+            } else if (marksoop >= 50) {
+                grade = "bminus";
+            } else if (marksoop >= 45) {
+                grade = "cplus";
+            } else if (marksoop >= 40) {
+                grade = "c";
+            } else if (marksoop >= 35) {
+                grade = "cminus";
+            } else if (marksoop >= 30) {
+                grade = "dplus";
+            } else if (marksoop <= 25) {
+                grade = "d";
+            } else {
+                grade = "e";
+            }
+        }
+
+        if (subject.equals("sad")) {
+            if (marksdata >= 70) {
+                grade = "aplus";
+            } else if (marksoop >= 65) {
+                grade = "aminus";
+            } else if (marksoop >= 60) {
+                grade = "bplus";
+            } else if (marksoop >= 55) {
+                grade = "b";
+            } else if (marksoop >= 50) {
+                grade = "bminus";
+            } else if (marksoop >= 45) {
+                grade = "cplus";
+            } else if (marksoop >= 40) {
+                grade = "c";
+            } else if (marksoop >= 35) {
+                grade = "cminus";
+            } else if (marksoop >= 30) {
+                grade = "dplus";
+            } else if (marksoop <= 25) {
+                grade = "d";
+            } else {
+                grade = "e";
+            }
+        }
+
+        if (subject.equals("ethics")) {
+            if (marksdata >= 70) {
+                grade = "aplus";
+            } else if (marksoop >= 65) {
+                grade = "aminus";
+            } else if (marksoop >= 60) {
+                grade = "bplus";
+            } else if (marksoop >= 55) {
+                grade = "b";
+            } else if (marksoop >= 50) {
+                grade = "bminus";
+            } else if (marksoop >= 45) {
+                grade = "cplus";
+            } else if (marksoop >= 40) {
+                grade = "c";
+            } else if (marksoop >= 35) {
+                grade = "cminus";
+            } else if (marksoop >= 30) {
+                grade = "dplus";
+            } else if (marksoop <= 25) {
+                grade = "d";
+            } else {
+                grade = "e";
+            }
+        }
+
+        if (subject.equals("dcn")) {
+            if (marksdata >= 70) {
+                grade = "aplus";
+            } else if (marksoop >= 65) {
+                grade = "aminus";
+            } else if (marksoop >= 60) {
+                grade = "bplus";
+            } else if (marksoop >= 55) {
+                grade = "b";
+            } else if (marksoop >= 50) {
+                grade = "bminus";
+            } else if (marksoop >= 45) {
+                grade = "cplus";
+            } else if (marksoop >= 40) {
+                grade = "c";
+            } else if (marksoop >= 35) {
+                grade = "cminus";
+            } else if (marksoop >= 30) {
+                grade = "dplus";
+            } else if (marksoop <= 25) {
+                grade = "d";
+            } else {
+                grade = "e";
+            }
+        }
+        return grade;
+
+    }
+
+    public double getGP(double gp) {
+        this.gp = gp;
+        switch (grade) {
+            case "aplus":
+                gp = 4;
+            case "aminus":
+                gp = 3.7;
+            case "bplus":
+                gp = 3.3;
+            case "b":
+                gp = 3;
+            case "bminus":
+                gp = 2.7;
+            case "cplus":
+                gp = 2.3;
+            case "c":
+                gp = 2;
+            case "cminus":
+                gp = 1.7;
+            case "dplus":
+                gp = 1.3;
+            case "d":
+                gp = 1;
+            case "e":
+                gp = 0;
         }
 
 
+        return gp;
     }
+
+
+}
 
 
