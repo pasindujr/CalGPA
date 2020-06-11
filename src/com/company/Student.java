@@ -12,13 +12,12 @@ public class Student {
     int markssad;
     int marksethics;
     int marksdcn;
+    int test;
 
     public void getGrade() {
-        int grade;
-        switch (subject) {
-            case "java":
 
-        }
+
+
 
     }
 }
