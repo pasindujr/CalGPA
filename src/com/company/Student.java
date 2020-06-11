@@ -14,7 +14,11 @@ public class Student {
     int marksdcn;
 
     public void getGrade() {
-        
+        int grade;
+        switch (subject) {
+            case "java":
+
+        }
 
     }
 }
