@@ -26,6 +26,20 @@ public class Student {
                     gp = 3.3;
                 } else if (marksoop >= 55) {
                     gp = 3;
+                } else if (marksoop >= 50) {
+                    gp = 2.7;
+                } else if (marksoop >= 45) {
+                    gp = 2.3;
+                } else if (marksoop >= 40) {
+                    gp = 2;
+                } else if (marksoop >= 35) {
+                    gp = 1.7;
+                } else if (marksoop >= 30) {
+                    gp = 1.3;
+                } else if (marksoop <= 25) {
+                    gp = 1;
+                } else {
+                    gp = 0;
                 }
 
         }
